@@ -14,7 +14,13 @@
         <div class="container">
             <nav class="nav">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+                {{!-- If user is logged in go to dashboard --}}
+                {{!-- Else go to login page --}}
+                {{#if loggedIn}}
                 <a class="nav-link" href="#">Dashboard</a>
+                {{else}}
+                <a class="nav-link" href="#">Dashboard</a>
+                {{/if}}
                 {{#if loggedIn}}
                 <a class="nav-link" href="#">Login</a>
                 {{else}}
