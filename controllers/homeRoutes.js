@@ -17,12 +17,22 @@ router.get('/', async (req, res) => {
             post.get({ plain: true })
         );
 
-        res.render('home', {posts, loggedIn: req.session.loggedIn});
+        res.render('home', { posts, loggedIn: req.session.loggedIn });
 
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
     }
+});
+
+// Login
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('login');
 });
 
 module.exports = router;
