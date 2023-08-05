@@ -14,3 +14,8 @@ else if (document.location.pathname == "/login")
 {
     pageHeader.textContent = "Login or Sign Up";
 }
+
+else if (document.location.pathname.includes("/api/posts"))
+{
+    pageHeader.textContent = "The Tech Blog"
+}

@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <nav class="nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
                 {{!-- If user is logged in go to dashboard --}}
                 {{!-- Else go to login page --}}
                 {{#if loggedIn}}
@@ -42,6 +42,7 @@
 
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
+    <script src="/js/comments.js"></script>
     {{/if}}
     <script src="/js/setHeader.js"></script>
 
