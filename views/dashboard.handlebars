@@ -2,7 +2,21 @@
     {{!-- Need to have button for each post --}}
     {{!-- Add ID to button --}}
     {{!-- Use partials --}}
-    {{#each dashboard.posts as |post|}}
+    {{#each posts as |post|}}
     {{> dashboard-posts}}
     {{/each}}
+
+    <br />
+
+    <form id="newPostForm">
+        <div class="mb-3">
+            <label for="postTitleInput" class="form-label">Create new post:</label>
+            <input type="text" class="form-control" id="postTitleInput" />
+            <div class="form-text">Input the title for the new post here.</div>
+        </div>
+        <div class="mb-3">
+            <textarea type="text" class="form-control" id="postTextInput">Input the text of your new post here.</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>

@@ -1,4 +1,12 @@
-<button class="card-body col-12">
-    <h5 class="card-title bg-dark text-white">Card title</h5>
-    <h6 class="text-muted">Date</h6>
-</button>
+<div class="card col-12 border border-dark">
+    <div class="card-body">
+        <h5 class="card-title bg-dark text-white">{{title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{user.username}} - {{date}}</h6>
+        <p class="card-text">{{text}}</p>
+
+        <hr />
+
+        <button id="updatePost" type="button" class="btn btn-primary">Update Post</button>
+        <button id="deletePost" type="button" class="btn btn-secondary">Delete Post</button>
+    </div>
+</div>

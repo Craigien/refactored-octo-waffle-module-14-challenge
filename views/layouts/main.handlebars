@@ -17,7 +17,7 @@
                 {{!-- If user is logged in go to dashboard --}}
                 {{!-- Else go to login page --}}
                 {{#if loggedIn}}
-                <a class="nav-link" href="/dashboard">Dashboard</a>
+                <a class="nav-link" href="/api/dashboard">Dashboard</a>
                 {{else}}
                 <a class="nav-link" href="/login">Dashboard</a>
                 {{/if}}
@@ -30,7 +30,7 @@
 
             <div class="row gx-5">
                 <div class="col">
-                    {{!-- Need to change this depending on current page --}}
+                    {{!-- This is set in setHeader.js --}}
                     <h1 id="page-header" class="p-3 border bg-primary text-white"></h1>
             </div>
         </div>
@@ -43,6 +43,7 @@
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
     <script src="/js/comments.js"></script>
+    <script src="/js/newPost.js"></script>
     {{/if}}
     <script src="/js/setHeader.js"></script>
 
