@@ -5,7 +5,7 @@ if (document.location.pathname == "/")
     pageHeader.textContent = "The Tech Blog";
 }
 
-else if (document.location.pathname == "/dashboard")
+else if (document.location.pathname == "/api/dashboard")
 {
     pageHeader.textContent = "Dashboard";
 }

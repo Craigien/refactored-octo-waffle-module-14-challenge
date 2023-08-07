@@ -50,4 +50,45 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+// PUT updated post
+router.put('/:id', withAuth, async (req, res) => {
+    try {
+        const updatePost = await Posts.update({
+            title: req.body.title,
+            text: req.body.text,
+            date: req.body.fullDate,
+        },
+        {
+            where: {
+                id: req.params.id,
+            },
+        });
+
+        res.status(200).json(updatePost);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+// DELETE a post
+router.delete('/:id', withAuth, async (req, res) => {
+    try {
+        const dbPostData = await Posts.destroy({
+            where: {
+                id: req.params.id,
+            },
+        });
+
+        if (!dbPostData)
+        {
+            res.status(404).json({ message: "No post found with that ID" });
+            return;
+        }
+
+        res.status(200).json(dbPostData);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
 module.exports = router;

@@ -6,7 +6,19 @@
 
         <hr />
 
-        <button id="updatePost" type="button" class="btn btn-primary">Update Post</button>
-        <button id="deletePost" type="button" class="btn btn-secondary">Delete Post</button>
+        <button id="{{id}}" type="button" class="btn btn-primary updatePost">Update Post</button>
+        <button id="{{id}}" type="button" class="btn btn-secondary deletePost">Delete Post</button>
     </div>
+
+    <form id="{{id}}" class="updatePostForm" hidden>
+        <div class="mb-3">
+            <label for="updatePostTitleInput" class="form-label">Update post:</label>
+            <input type="text" class="form-control" id="updatePostTitleInput" />
+            <div class="form-text">Update title here.</div>
+        </div>
+        <div class="mb-3">
+            <textarea type="text" class="form-control" id="updatePostTextInput">Update text here.</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Update</button>
+    </form>
 </div>
