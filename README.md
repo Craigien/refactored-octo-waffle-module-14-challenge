@@ -15,7 +15,7 @@ The application can be accessed at this URL: https://dry-mountain-43107-252c46a3
 
 To create a post, first sign up using the login link.  After signing up, click on the dashboard link and create a new post.  You can update or delete a post after it has been created.  To add comments, click on a post on the homepage and add a comment.
 
-Note taker screenshot:
+Tech blog screenshot:
 
 ![Tech Blog](public/assets/images/Screenshot.png)
 
