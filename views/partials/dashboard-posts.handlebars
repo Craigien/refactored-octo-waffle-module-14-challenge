@@ -13,11 +13,10 @@
     <form id="{{id}}" class="updatePostForm" hidden>
         <div class="mb-3">
             <label for="updatePostTitleInput" class="form-label">Update post:</label>
-            <input type="text" class="form-control" id="updatePostTitleInput" />
-            <div class="form-text">Update title here.</div>
+            <input type="text" class="form-control" id="updatePostTitleInput" value="{{title}}" />
         </div>
         <div class="mb-3">
-            <textarea type="text" class="form-control" id="updatePostTextInput">Update text here.</textarea>
+            <textarea type="text" class="form-control" id="updatePostTextInput">{{text}}</textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit Update</button>
     </form>
