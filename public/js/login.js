@@ -1,3 +1,4 @@
+// Function to handle user login
 const loginFormHandler = async (event) => {
     event.preventDefault();
 
@@ -19,6 +20,7 @@ const loginFormHandler = async (event) => {
     }
 };
 
+// Fetch call to handle user sign up
 const signupFormHandler = async (event) => {
     event.preventDefault();
 

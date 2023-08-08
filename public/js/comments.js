@@ -37,5 +37,3 @@ if (window.location.pathname.includes("/api/posts"))
 {
     document.querySelector('#commentForm').addEventListener("submit", addCommentHandler);
 }
-
-console.log("comments.js is connected");

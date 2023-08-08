@@ -1,3 +1,4 @@
+// Set header text on different pages
 const pageHeader = document.querySelector('#page-header');
 
 if (document.location.pathname == "/")

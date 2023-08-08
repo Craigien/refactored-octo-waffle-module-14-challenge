@@ -76,7 +76,7 @@ const deletePostHandler = async (event) => {
     })
 };
 
-// Only listen for form submit when on dashboard page
+// Only listen for form submit and button clicks when on dashboard page
 if (window.location.pathname.includes("/api/dashboard"))
 {
     document.querySelector('#newPostForm').addEventListener("submit", addNewPostHandler);
