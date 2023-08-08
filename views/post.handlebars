@@ -14,6 +14,7 @@
         {{> comment}}
     {{/each}}
 
+    {{#if loggedIn}}
     <form id="commentForm">
         <div class="mb-3">
             <label for="commentInput" class="form-label">Comment:</label>
@@ -21,4 +22,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    {{/if}}
 </div>

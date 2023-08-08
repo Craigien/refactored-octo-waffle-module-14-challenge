@@ -4,7 +4,7 @@ const { Posts, Comments, Users } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET one post by ID and display all comments
-router.get('/:id', withAuth, async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const dbPostData = await Posts.findByPk(req.params.id, {
             include: [
